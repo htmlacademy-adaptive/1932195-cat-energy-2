@@ -13,9 +13,9 @@
   <p>GitHub Pages!!</p>
   <header class="main-header">
     <a class="main-header__logo" href="/">
-      <img class="main-header__logo main-header__logo--text" src="logo-text-header.svg" width="101" height="18" alt="Cat Energy">
+      <img class="main-header__logo main-header__logo--text" src="logo-text-header.svg" width="101" height="18" alt="Логотип Cat Energy">
     </a>
-    <nav class="main-nav main-nav__nojs">
+    <nav class="main-nav main-nav--nojs">
       <button class="main-nav__toggle main-nav__toggle--close" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
@@ -84,13 +84,15 @@
     </section>
     <section class="promotions">
       <h2 class="promotions__title">Акции и новинки</h2>
-      <p class="">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
+      <p class="promotions__newsletter">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
       <form class="newsletter-form" action="https://echo.htmlacademy.ru" method="post">
-        <label for="newsletter-email"></label>
-        <input class="" placeholder="кuklachev@gmail.com" type="email" id="newsletter-email" name="newsletter-email" required>
-        <button class="button" type="submit">Подписаться</button>
+        <label class="visually-hidden" for="newsletter-email">Email</label>
+        <input class="newsletter-form__field" placeholder="кuklachev@gmail.com" type="email" id="newsletter-email" name="newsletter-email" required>
+        <button class="newsletter-form__button button" type="submit">Подписаться</button>
       </form>
     </section>
+  </main>
+  <footer class="main-footer">
     <section class="contacts">
       <div class="contacts__wrapper">
         <h2 class="visually-hidden">Контактная информация</h2>
@@ -104,8 +106,7 @@
         <iframe class="contacts__map" src="https://www.google.com/maps/..." width="600" height="362" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </section>
-  </main>
-  <footer class="main-footer">
+
     <div class="main-footer__wrapper">
       <a class="main-footer__logo-link" href="/" aria-label="Логотип Cat Energy">
         <svg width="128" height="25" viewBox="0 0 128 25" fill="none" xmlns="http://www.w3.org/2000/svg">
