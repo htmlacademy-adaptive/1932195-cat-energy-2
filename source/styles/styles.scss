@@ -5,3 +5,12 @@
 
 /* BLOCKS */
 @import "./blocks/header.scss";
+
+/* GLOBAL */
+@import "./global/variables.scss";
+@import "./global/mixin.scss";
+@import "./global/global.scss";
+
+/* BLOCKS */
+
+@import "./blocks/slider.scss";

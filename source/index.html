@@ -11,6 +11,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
+  <script src="scripts/slider.js" defer></script>
 </head>
 
 <body class="page__body">
@@ -134,14 +135,42 @@
           </dl>
           <p class="example__cost">Затраты на питание: <span class="example__price">15 000 РУБ.</span></p>
         </div>
-        <img class="example__image" src="slider-mobile.png" width="280" height="256" srcset="slider-mobile@2x.png 2x" alt="Толстый и худой кот">
+        <div class="slider">
+          <div class="slider__container">
+            <ul class="slider__images">
+              <li class="slider__image slider__image--before">
+                <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="images/slider/cat-before-tablet-desktop@1x.webp, images/slider/cat-before-tablet-desktop@2x.webp 2x" width="560" height="512">
+                  <source type="image/webp" srcset="images/slider/cat-before-mobile@1x.webp, images/slider/cat-before-mobile@2x.webp 2x">
+                  <source type="image/png" media="(min-width: 768px)" srcset="images/slider/cat-before-tablet-desktop@1x.png, images/slider/cat-before-tablet-desktop@2x.png 2x" width="560" height="512">
+                  <img class="slider__before" src="images/slider/cat-before-mobile@1x.png" srcset="images/slider/cat-before-mobile@2x.png 2x" alt="Кот до приема cat Energy" width="280" height="256">
+                </picture>
+              </li>
+              <li class="slider__image slider__image--after">
+                <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="images/slider/cat-after-tablet-desktop@1x.webp, images/slider/cat-after-tablet-desktop@2x.webp 2x" width="560" height="512">
+                  <source type="image/webp" srcset="images/slider/cat-after-mobile@1x.webp, images/slider/cat-after-mobile@2x.webp 2x">
+                  <source type="image/png" media="(min-width: 768px)" srcset="images/slider/cat-after-tablet-desktop@1x.png, images/slider/cat-after-tablet-desktop@2x.png 2x" width="560" height="512">
+                  <img class="slider__after" src="images/slider/cat-after-mobile@1x.png" srcset="images/slider/cat-after-mobile@2x.png 2x" alt="Кот после приема cat Energy" width="280" height="256">
+                </picture>
+              </li>
+            </ul>
+
+            <div class="slider__input">
+              <button class="slider__button" type="button">
+                <span class="visually-hidden">Посмотреть изменения</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- <img class="example__image" src="slider-mobile.png" width="280" height="256" srcset="slider-mobile@2x.png 2x" alt="Толстый и худой кот">
         <div class="example__range-bar">
           <button class="example__range-toggle" type="button" aria-label="Передвижение слайдера">
             <svg width="40" height="40">
               <use href="sprite.svg#icon-range-toggle"></use>
             </svg>
           </button>
-        </div>
+        </div> -->
       </div>
     </section>
   </main>
