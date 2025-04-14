@@ -1,9 +1,17 @@
-/* здесь используйте глобальные селекторы img, body, html и так далее*/
+/* здесь используйте глобальные селекторы img, body, html и так далее */
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+body {
+  @include font-setting;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: $f-highlighted;
 }
 
 img {
@@ -14,12 +22,4 @@ img {
 
 a {
   text-decoration: none;
-}
-
-body {
-  @include font-setting;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  background-color: $f-highlighted;
 }

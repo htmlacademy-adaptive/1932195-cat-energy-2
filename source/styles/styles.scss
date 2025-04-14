@@ -3,14 +3,12 @@
 @import "./common/global.scss";
 @import "./common/fonts.scss";
 
-/* BLOCKS */
-@import "./blocks/header.scss";
-
 /* GLOBAL */
 @import "./global/variables.scss";
 @import "./global/mixin.scss";
 @import "./global/global.scss";
 
 /* BLOCKS */
-
+@import "./blocks/visually-hidden";
+@import "./blocks/header.scss";
 @import "./blocks/slider.scss";
