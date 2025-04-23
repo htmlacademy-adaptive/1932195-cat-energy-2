@@ -1,0 +1,9 @@
+/* здесь подключите шрифты */
+
+// $primary-font: "PT Sans Narrow", sans-serif;
+
+// @include font-face("PT Sans Narrow", 400, normal, url("../fonts/pt-sans-narrow.woff2") format("woff2"));
+// @include font-face("PT Sans Narrow", 700, normal, url("../fonts/pt-sans-narrow-bold.woff2") format("woff2"));
+
+@include font-face ("Lato", 400, normal, url("../../fonts/lato/Lato-Regular.woff2") format("woff2"));
+@include font-face ("Oswald", 400, normal, url("../../fonts/oswald/oswaldregular.woff2") format("woff2"));

@@ -2,6 +2,14 @@
 
 }
 
+.main-nav a {
+  font-family: $secondary-font;
+  font-size: 20px;
+  line-height: 20px;
+  color: $f-secondary;
+  text-transform: uppercase;
+}
+
 .main-nav__toggle {
 
 }
