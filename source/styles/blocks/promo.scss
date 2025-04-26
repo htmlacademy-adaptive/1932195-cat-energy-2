@@ -1,4 +1,20 @@
 .promo {
   background-color: $bg-main;
-  opacity: 0.85;
+  opacity: .85;
+}
+
+// .promo__wrapper {
+
+// }
+
+.promo__title {
+  color: $f-highlighted;
+}
+
+.promo__slogan {
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: $f-highlighted;
 }
