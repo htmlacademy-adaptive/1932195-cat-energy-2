@@ -1,0 +1,26 @@
+.guide__item::before {
+  content: "";
+  background-position: 50%;
+  background-repeat: no-repeat;
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  display: block;
+  background-size: 60px 60px;
+}
+
+.guide__item--nutrients::before {
+  background-image: url("../icons/stack.svg#nutrients-mobile");
+}
+
+.guide__item--powder::before {
+  background-image: url("../icons/stack.svg#powder-mobile");
+}
+
+.guide__item--replacement::before {
+  background-image: url("../icons/stack.svg#replacement-mobile");
+}
+
+.guide__item--change::before {
+  background-image: url("../icons/stack.svg#change-mobile");
+}

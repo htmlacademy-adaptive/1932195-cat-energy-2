@@ -10,6 +10,20 @@
   text-transform: uppercase;
 }
 
-// .main-nav__toggle {
+.main-nav__toggle {
+  position: relative;
+  z-index: 101;
+  width: 24px;
+  height: 24px;
+  padding: none;
+  cursor: pointer;
+  border: none;
+  background-color: $f-highlighted;
+  background-image: url(../icons/stack.svg#menu-close);
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+}
 
-// }
+.main-nav__toggle--close {
+background-image: url(../icons/stack.svg#menu-burger);
+}

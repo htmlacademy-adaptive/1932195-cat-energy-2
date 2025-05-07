@@ -1,3 +1,13 @@
+.cards__item--more {
+  background-image: url("../icons/stack.svg#plus");
+  background-position: 0%;
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  grid-template-areas: "title" "description" "button";
+  justify-items: center;
+  padding-top: 78px;
+}
+
 .cards__title {
   color: $f-minor;
   font-weight: 400;

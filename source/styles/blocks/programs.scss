@@ -2,6 +2,22 @@
 
 // }
 
+.programs__item--loss {
+  background-image: url("../icons/stack.svg#cat-slim-mobile");
+  background-repeat: no-repeat;
+  background-size: 50px 53px;
+  width: 50px;
+  height: 53px;
+}
+
+.programs__item--gain {
+  background-image: url("../icons/stack.svg#cat-pro-mobile");
+  background-repeat: no-repeat;
+  background-size: 67px 50px;
+  width: 67px;
+  height: 50px;
+}
+
 .programs__title {
   font-family: $secondary-font;
   font-size: 24px;
@@ -17,4 +33,16 @@
   line-height: 16px;
   text-transform: uppercase;
   color: $f-secondary;
+}
+
+.programs__link::after {
+  content: "";
+  background-color: $f-secondary;
+  width: 24px;
+  height: 12px;
+  transition: all, all 1.3s;
+  mask-image: url(../icons/stack.svg#arrow);
+  mask-position: 100%;
+  mask-size: 24px 12px;
+  mask-repeat: no-repeat;
 }
