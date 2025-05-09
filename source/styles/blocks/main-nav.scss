@@ -19,11 +19,11 @@
   cursor: pointer;
   border: none;
   background-color: $f-highlighted;
-  background-image: url("/../icons/stack.svg#menu-close");
+  background-image: url("../../icons/stack.svg#menu-close");
   background-repeat: no-repeat;
   background-size: 24px 24px;
 }
 
 .main-nav__toggle--close {
-  background-image: url("/../icons/stack.svg#menu-burger");
+  background-image: url("../../icons/stack.svg#menu-burger");
 }
