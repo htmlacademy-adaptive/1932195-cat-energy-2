@@ -1,3 +1,21 @@
+.guide__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 247px 249px;
+    gap: 37px 137px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    // gap: 80px;
+  }
+}
+
+
 .guide__item::before {
   content: "";
   background-position: 50%;

@@ -12,14 +12,23 @@ body {
   font-size: 14px;
   line-height: 18px;
   color: $f-main;
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
 }
 
 // body {
-//   @include font-setting;
-//   height: 100%;height
-//   margin: 0;margin
-//   padding: 0;padding
-//   background-color: $f-highlighted;background-color
+//   // @include font-setting;
+//   // height: 100%;
+//   margin: 0;
+//   // padding: 0;
+//   // background-color: $f-highlighted;
 // }
 
 img {

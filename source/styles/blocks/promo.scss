@@ -1,6 +1,10 @@
 .promo {
   background-color: $bg-main;
   opacity: 0.85;
+
+  @media (min-width: $tablet-width) {
+    background-color: $f-highlighted;
+  }
 }
 
 // .promo__wrapper {
@@ -9,6 +13,10 @@
 
 .promo__title {
   color: $f-highlighted;
+
+  @media (min-width: $tablet-width) {
+    color: $f-secondary;
+  }
 }
 
 .promo__slogan {
@@ -17,4 +25,8 @@
   line-height: 14px;
   text-transform: uppercase;
   color: $f-highlighted;
+
+  @media (min-width: $tablet-width) {
+    color: $f-secondary;
+  }
 }
