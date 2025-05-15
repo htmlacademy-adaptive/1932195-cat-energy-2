@@ -14,11 +14,11 @@ body {
   color: $f-main;
   width: 320px;
 
-  @media (min-width: $tablet-width) {
+  @include tablet {
     width: 768px;
   }
 
-  @media (min-width: $desktop-width) {
+  @include desktop {
     width: 1440px;
   }
 }

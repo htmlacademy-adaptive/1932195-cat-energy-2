@@ -1,15 +1,13 @@
 .guide__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include list-resseting;
 
-  @media (min-width: $tablet-width) {
+  @include tablet {
     display: grid;
     grid-template-columns: 247px 249px;
     gap: 37px 137px;
   }
 
-  @media (min-width: $desktop-width) {
+  @include desktop {
     display: flex;
     // gap: 80px;
   }

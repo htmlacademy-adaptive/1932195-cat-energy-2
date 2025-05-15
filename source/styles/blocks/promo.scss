@@ -2,7 +2,7 @@
   background-color: $bg-main;
   opacity: 0.85;
 
-  @media (min-width: $tablet-width) {
+  @include tablet {
     background-color: $f-highlighted;
   }
 }
@@ -14,7 +14,7 @@
 .promo__title {
   color: $f-highlighted;
 
-  @media (min-width: $tablet-width) {
+  @include tablet {
     color: $f-secondary;
   }
 }
@@ -26,7 +26,7 @@
   text-transform: uppercase;
   color: $f-highlighted;
 
-  @media (min-width: $tablet-width) {
+  @include tablet {
     color: $f-secondary;
   }
 }

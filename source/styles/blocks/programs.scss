@@ -3,11 +3,9 @@
 // }
 
 .programs__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include list-resseting;
 
-  @media (min-width: $desktop-width) {
+  @include desktop {
     display: flex;
     gap: 80px;
   }
