@@ -1,9 +1,26 @@
 .promo {
-  background-color: $bg-main;
-  opacity: 0.85;
+  position: relative;
+  background: linear-gradient(0deg, rgba(104, 183, 56, 0.85) 0%, rgba(104, 183, 56, 0.85) 100%), url("../../images/backgrounds/cat-background-mobile@2x.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 302px, 100% 302px;
 
   @include tablet {
     background-color: $f-highlighted;
+  }
+
+  @include desktop {
+    &::before {
+      content: "";
+      z-index: 1;
+      background: linear-gradient(0deg, rgba(104, 183, 56, 0.85) 0%, rgba(104, 183, 56, 0.85) 100%), url("../../images/backgrounds/cat-background-desktop@2x.jpg");
+      background-size: cover, 1040px 100%;
+      background-position: 100%, 0%;
+      width: 50%;
+      height: 694px;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
   }
 }
 

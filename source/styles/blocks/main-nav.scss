@@ -5,8 +5,8 @@
 .main-nav__toggle {
   position: relative;
   z-index: 101;
-  width: 24px;
-  height: 24px;
+  width: 65px;
+  height: 65px;
   padding: none;
   cursor: pointer;
   border: none;
@@ -14,6 +14,15 @@
   background-image: url("../../icons/stack.svg#menu-close");
   background-repeat: no-repeat;
   background-size: 24px 24px;
+  background-position: center;
+
+  :hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-nav__toggle--close {
