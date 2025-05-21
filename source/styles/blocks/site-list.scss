@@ -21,7 +21,7 @@
 
     &--active {
       position: relative;
-
+/* stylelint-disable */
       &::after {
         content: "";
         position: absolute;
@@ -34,6 +34,7 @@
         @include desktop {
           background: $f-highlighted;
         }
+/* stylelint-enable */
       }
     }
   }

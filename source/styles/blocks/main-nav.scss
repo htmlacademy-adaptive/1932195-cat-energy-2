@@ -117,7 +117,7 @@
 
   &:active::before,
   &:active::after {
-    background-color: opacify(#000000, 0.3);
+    background-color: rgba(0, 0, 0, 0.3);
   }
 }
 
