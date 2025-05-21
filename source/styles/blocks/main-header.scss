@@ -1,10 +1,11 @@
 .main-header {
   display: flex;
-  // flex-direction: column;
+  flex-direction: column;
   justify-content: space-between;
 
   @include tablet {
     justify-content: start;
+    flex-direction: row;
   }
 }
 
