@@ -36,8 +36,6 @@
     <nav class="main-nav main-nav--opened main-nav--nojs">
       <button class="main-nav__toggle" type="button" aria-label="Main nav">
         <span class="visually-hidden">Открыть меню</span>
-        <!-- <img src="#" width="10" height="10" alt="Открыть меню">
-        <img src="#" width="10" height="10" alt="Закрыть меню"> -->
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list main-nav__list--close">
@@ -63,15 +61,13 @@
       <div class="container">
         <picture>
           <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/products/can-desktop@1x.png 1x, images/products/can-desktop@2x.png 2x">
-          <!-- <source type="image/webp" media="(min-width: 768px)" srcset="images/slider/cat-before-tablet-desktop@1x.webp, images/slider/cat-before-tablet-desktop@2x.webp 2x" width="560" height="512"> -->
           <source width="709" height="609" type="image/jpeg" media="(min-width: 768px)" srcset="images/products/can-tablet@1x.jpg 1x, images/products/can-tablet@2x.jpg 2x">
           <img class="promo__image" src="images/products/can-mobile@1x.png" width="280" height="270" srcset="images/products/can-mobile@2x.png 2x" alt="Упаковка еды для котов серии PRO">
         </picture>
+        <a class="promo__link button text-boxes" href="#">Подобрать программу</a>
       </div>
-      <a class="promo__link button text-boxes" href="#">Подобрать программу</a>
-
     </section>
-    <section class="programs">
+    <section class="programs container container-padding">
       <div class="programs__wrapper">
         <h2 class="visually-hidden">Программы питания</h2>
         <ul class="programs__list">
@@ -85,7 +81,7 @@
             <a class="programs__link" href="#">Kаталог slim</a>
           </li>
           <li class="programs__item programs__item--gain">
-            <h3 class="programs__title">Набор массы</h3>
+            <h3 class="programs__title programs__title--gain">Набор массы</h3>
             <p class="programs__description">
               Заработать авторитет среди дворовых котов и даже собак?
               Серия Cat Energy Pro поможет вашему коту нарастить
@@ -96,7 +92,7 @@
         </ul>
       </div>
     </section>
-    <section class="guide">
+    <section class="guide container">
       <div class="guide__wrapper">
         <h2 class="guide__title title-second">Как это работает</h2>
         <ul class="guide__list">
@@ -132,7 +128,7 @@
       </div>
     </section>
     <section class="example">
-      <div class="example__wrapper">
+      <div class="example__wrapper container">
         <h2 class="example__title title-second">Живой пример</h2>
         <p class="example__text">
           Борис сбросил 5 кг за 2 месяца, просто заменив свой
@@ -179,14 +175,6 @@
             </div>
           </div>
         </div>
-        <!-- <img class="example__image" src="slider-mobile.png" width="280" height="256" srcset="slider-mobile@2x.png 2x" alt="Толстый и худой кот">
-        <div class="example__range-bar">
-          <button class="example__range-toggle" type="button" aria-label="Передвижение слайдера">
-            <svg width="40" height="40">
-              <use href="sprite.svg#icon-range-toggle"></use>
-            </svg>
-          </button>
-        </div> -->
       </div>
     </section>
   </main>

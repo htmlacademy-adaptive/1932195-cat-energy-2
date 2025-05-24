@@ -1,6 +1,9 @@
-// .promo {
-//   position: relative;
-// }
+.promo {
+  display: flex;
+  flex-direction: column;
+  min-height: 480px;
+  margin-bottom: 16px;
+}
 
 .promo__wrapper {
   background-color: #4f4f54;
@@ -10,6 +13,7 @@
   background-position: center top, center top;
   min-height: 302px;
   margin-bottom: 100px;
+  padding-top: 21px;
 
   @include tablet {
     background: none;
@@ -31,13 +35,10 @@
   }
 }
 
-// .promo__wrapper {
-
-// }
-
 .promo__title {
   color: $f-highlighted;
   margin: 0;
+  margin-bottom: 26px;
 
   @include tablet {
     color: $f-secondary;
@@ -50,6 +51,7 @@
   line-height: 14px;
   text-transform: uppercase;
   color: $f-highlighted;
+  text-align: center;
 
   @include tablet {
     color: $f-secondary;
@@ -58,7 +60,13 @@
 
 .promo__image {
   position: absolute;
-  top: -230px;
+  top: -240px;
   left: 50%;
   translate: -50%;
 }
+
+// .promo__link {
+//   text-align: center;
+//   display: flex;
+//   justify-content: center;
+// }

@@ -1,3 +1,7 @@
+.guide {
+  margin-bottom: 49px;
+}
+
 .guide__list {
   @include list-resseting;
 
@@ -13,6 +17,10 @@
   }
 }
 
+.guide__item {
+  display: flex;
+  margin-bottom: 20px;
+}
 
 .guide__item::before {
   content: "";
@@ -39,4 +47,8 @@
 
 .guide__item--change::before {
   background-image: url("../../icons/stack.svg#change");
+}
+
+.guide__description {
+  margin: 0 0 0 20px;
 }

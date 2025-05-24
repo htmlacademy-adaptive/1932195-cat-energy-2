@@ -13,22 +13,25 @@
 
 .programs__item {
   background-color: $bg-secondary;
+  padding: 21px 20px 18px;
+  margin-bottom: 20px;
+  background-repeat: no-repeat;
 }
 
 .programs__item--loss {
   background-image: url("../../icons/stack.svg#cat-slim");
-  background-repeat: no-repeat;
   background-size: 50px 53px;
   // width: 50px;
   // height: 53px;
+  background-position: 20px 21px;
 }
 
 .programs__item--gain {
   background-image: url("../../icons/stack.svg#cat-pro");
-  background-repeat: no-repeat;
   background-size: 67px 50px;
   // width: 67px;
   // height: 50px;
+  background-position: 11px 25px;
 }
 
 .programs__title {
@@ -38,6 +41,16 @@
   text-transform: uppercase;
   font-weight: 400;
   color: $f-secondary;
+  margin: 8px 8px 30px 16px;
+  text-align: center;
+}
+
+.programs__title--gain {
+  margin-left: 47px;
+}
+
+.programs__description {
+  margin: 0 0 43px;
 }
 
 .programs__link {
