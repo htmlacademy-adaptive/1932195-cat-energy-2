@@ -4,4 +4,10 @@
   line-height: 36px;
   font-weight: 400;
   text-align: center;
+
+  @include tablet {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: start;
+  }
 }

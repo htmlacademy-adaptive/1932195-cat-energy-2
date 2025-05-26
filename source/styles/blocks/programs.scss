@@ -1,6 +1,8 @@
-// .programs {
-
-// }
+.programs {
+  @include tablet {
+    margin-bottom: 45px;
+  }
+}
 
 .programs__list {
   @include list-resseting;
@@ -16,6 +18,11 @@
   padding: 21px 20px 18px;
   margin-bottom: 20px;
   background-repeat: no-repeat;
+
+  @include tablet {
+    padding: 77px 316px 58px 52px;
+    margin-bottom: 30px;
+  }
 }
 
 .programs__item--loss {
@@ -24,6 +31,11 @@
   // width: 50px;
   // height: 53px;
   background-position: 20px 21px;
+
+  @include tablet {
+    background-size: 200px 211px;
+    background-position: right 12% top 50%;
+  }
 }
 
 .programs__item--gain {
@@ -32,6 +44,11 @@
   // width: 67px;
   // height: 50px;
   background-position: 11px 25px;
+
+  @include tablet {
+    background-size: 268px 200px;
+    background-position: right 7% top 56%;
+  }
 }
 
 .programs__title {
@@ -43,14 +60,32 @@
   color: $f-secondary;
   margin: 8px 8px 30px 16px;
   text-align: center;
+
+  @include tablet {
+    font-size: 36px;
+    line-height: 36px;
+    text-align: start;
+    margin: 0 0 25px;
+  }
 }
 
 .programs__title--gain {
   margin-left: 47px;
+
+  @include tablet {
+    margin: 0;
+    margin-bottom: 25px;
+  }
 }
 
 .programs__description {
   margin: 0 0 43px;
+
+  @include tablet {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 57px;
+  }
 }
 
 .programs__link {
@@ -59,6 +94,11 @@
   line-height: 16px;
   text-transform: uppercase;
   color: $f-secondary;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .programs__link::after {

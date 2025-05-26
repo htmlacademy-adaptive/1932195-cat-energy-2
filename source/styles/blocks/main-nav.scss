@@ -159,6 +159,11 @@
   line-height: 20px;
   color: $f-secondary;
   text-transform: uppercase;
+
+  @include tablet {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 @include tablet {

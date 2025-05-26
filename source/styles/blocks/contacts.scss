@@ -22,10 +22,10 @@
   display: flex;
   justify-content: space-between;
   background-color: $basic-white;
-  padding: 26px 20px;
+  padding: 26px 0;
 
   @media #{$not-mobile} {
-    padding: 61px 70px;
+    padding: 61px 39px;
   }
 
   @media #{$desktop-only} {
@@ -50,10 +50,7 @@
   max-width: 140px;
   margin: 0;
   padding-right: 10px;
-  font-size: 16px;
-  line-height: 20px;
-  color: $text-grey;
-  text-transform: uppercase;
+  color: $f-trifle;
 
   @media #{$not-mobile} {
     max-width: 170px;
@@ -103,10 +100,10 @@
   height: 100%;
   background-image:
     image-set(
-      url("../../images/map-phone@1x.webp") type("image/webp") 1x,
-      url("../../images/map-phone@2x.webp") type("image/webp") 2x,
-      url("../../images/map-phone@1x.png") type("image/png") 1x,
-      url("../../images/map-phone@2x.png") type("image/png") 2x
+      url("../../images/backgrounds/map-mobile@1x.webp") type("image/webp") 1x,
+      url("../../images/backgrounds/map-mobile@2x.webp") type("image/webp") 2x,
+      url("../../images/backgrounds/map-mobile@1x.png") type("image/png") 1x,
+      url("../../images/backgrounds/map-mobile@2x.png") type("image/png") 2x
     );
   background-repeat: no-repeat;
   background-size: cover;
@@ -117,20 +114,20 @@
     max-height: 400px;
     background-image:
       image-set(
-        url("../../images/map-tablet@1x.webp") type("image/webp") 1x,
-        url("../../images/map-tablet@2x.webp") type("image/webp") 2x,
-        url("../../images/map-tablet@1x.png") type("image/png") 1x,
-        url("../../images/map-tablet@2x.png") type("image/png") 2x
+        url("../../images/backgrounds/map-tablet@1x.webp") type("image/webp") 1x,
+        url("../../images/backgrounds/map-tablet@2x.webp") type("image/webp") 2x,
+        url("../../images/backgrounds/map-tablet@1x.png") type("image/png") 1x,
+        url("../../images/backgrounds/map-tablet@2x.png") type("image/png") 2x
       );
   }
 
   @media #{$desktop-only} {
     background-image:
       image-set(
-        url("../../images/map-desktop@1x.webp") type("image/webp") 1x,
-        url("../../images/map-desktop@2x.webp") type("image/webp") 2x,
-        url("../../images/map-desktop@1x.png") type("image/png") 1x,
-        url("../../images/map-desktop@2x.png") type("image/png") 2x
+        url("../../images/backgrounds/map-desktop@1x.webp") type("image/webp") 1x,
+        url("../../images/backgrounds/map-desktop@2x.webp") type("image/webp") 2x,
+        url("../../images/backgrounds/map-desktop@1x.png") type("image/png") 1x,
+        url("../../images/backgrounds/map-desktop@2x.png") type("image/png") 2x
       );
     background-position: center 0;
   }

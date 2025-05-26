@@ -3,6 +3,13 @@
   flex-direction: column;
   min-height: 480px;
   margin-bottom: 16px;
+
+  @include tablet {
+    min-height: 870px;
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 40px 120px;
+  }
 }
 
 .promo__wrapper {
@@ -17,6 +24,7 @@
 
   @include tablet {
     background: none;
+    margin-bottom: -85px;
   }
 
   @include desktop {
@@ -42,6 +50,7 @@
 
   @include tablet {
     color: $f-secondary;
+    margin-bottom: 40px;
   }
 }
 
@@ -55,6 +64,9 @@
 
   @include tablet {
     color: $f-secondary;
+    text-align: start;
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
@@ -63,10 +75,21 @@
   top: -240px;
   left: 50%;
   translate: -50%;
+
+  @include tablet {
+    z-index: -1;
+    top: 5px;
+  }
 }
 
-// .promo__link {
-//   text-align: center;
-//   display: flex;
-//   justify-content: center;
-// }
+.promo__link {
+  display: inline-flex;
+  justify-content: center;
+  margin-top: 33px;
+
+  @include tablet {
+    padding: 14px;
+    margin-left: -263px;
+    min-width: 242px;
+  }
+}

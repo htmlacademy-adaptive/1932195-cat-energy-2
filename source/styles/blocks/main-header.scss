@@ -5,13 +5,31 @@
 
   @include tablet {
     display: flex;
-    justify-content: start;
-    flex-direction: row;
+    // justify-content: start;
+    // flex-direction: row;
+    gap: 94px;
+    padding: 0 30px;
+    margin: 0 auto;
+    max-width: 768px;
+  }
+}
+
+.main-header__container {
+  max-width: 320px;
+  margin: 0 auto;
+  position: relative;
+
+  @include tablet {
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    margin-top: 25px;
   }
 }
 
 .main-header__logo {
-  height: 65px;
+  display: inline-flex;
   margin-left: 10px;
   margin-right: 42px;
   padding-left: 10px;
@@ -19,7 +37,9 @@
 
 
   @include tablet {
-    height: 50px;
+    margin: 0;
+    padding: 0;
+    margin-right: 13px;
   }
 
   @include desktop {
@@ -30,13 +50,22 @@
 .main-header__logo img {
   width: 33px;
   height: 65px;
+
+  @include tablet {
+    width: 60px;
+    height: 50px;
+  }
 }
 
-// .main-header__logo-text {
-//   text-align: center;
-// }
+.main-header__logo-text {
+  display: inline-flex;
+}
 
 .main-header__logo-text img {
   width: 101px;
   height: 65px;
+
+  @include tablet {
+    height: 18px;
+  }
 }
