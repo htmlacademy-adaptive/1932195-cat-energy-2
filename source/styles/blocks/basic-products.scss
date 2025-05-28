@@ -1,7 +1,19 @@
 .basic-products {
   margin-bottom: 25px;
+
+  @include tablet {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
 }
 
 .basic-products__list {
   @include list-resseting;
+
+  @include tablet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 140px 60px;
+  }
 }
