@@ -1,8 +1,19 @@
+.main-footer {
+  background: $bg-secondary;
+}
+
 .main-footer__wrapper {
   padding-top: 18px;
   padding-bottom: 40px;
   display: flex;
   flex-direction: column;
+
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 42px;
+  }
 }
 
 .main-footer__logo {

@@ -5,6 +5,10 @@
     min-height: 736px;
     margin-bottom: 0;
   }
+
+  @include desktop {
+    min-height: 396px;
+  }
 }
 
 // .guide__title {
@@ -24,7 +28,7 @@
 
   @include desktop {
     display: flex;
-    // gap: 80px;
+    gap: 70px;
   }
 }
 

@@ -10,7 +10,8 @@
   }
 
   @include desktop {
-    width: 500px;
+    justify-content: flex-end;
+    width: 570px;
   }
 }
 

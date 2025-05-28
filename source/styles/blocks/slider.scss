@@ -21,9 +21,10 @@
 
   @include desktop {
     // position: absolute;
-    top: 0;
+    top: -457px;
     padding: 0;
     background-color: transparent;
+    right: -200px;
 
     &::before {
       display: none;
@@ -45,7 +46,7 @@
 
   @include desktop {
     position: absolute;
-    top: 0;
+    top: -86px;
     left: 770px;
     margin: 0;
   }

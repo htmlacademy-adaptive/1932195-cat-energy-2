@@ -1,3 +1,12 @@
+.list {
+  border-top: 1px solid $bg-secondary-dull;
+}
+
+.list__item {
+  border-bottom: 1px solid $bg-secondary-dull;
+  padding: 13px 0 19px;
+}
+
 .list__title {
   font-family: $secondary-font;
   font-size: 16px;
@@ -5,9 +14,17 @@
   color: $f-minor;
   font-weight: 400;
   text-transform: uppercase;
+  margin: 0 0 12px;
 }
 
 .list__text {
   font-size: 14px;
   line-height: 14px;
+  margin: 0 0 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.list__link {
+  display: inline-block;
 }

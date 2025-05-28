@@ -1,14 +1,74 @@
+.cards__item {
+  border-top: 1px solid $bg-secondary-dim;
+}
+
 .cards__item--more {
+  border-bottom: 1px solid $bg-secondary-dim;
+}
+
+.cards__item-more {
   background-image: url("../../icons/stack.svg#plus");
-  background-position: 0%;
+  background-position: center 14%;
   background-repeat: no-repeat;
   background-size: 30px 30px;
-  grid-template-areas: "title" "description" "button";
-  justify-items: center;
+  // grid-template-areas: "title" "description" "button";
+  // justify-items: center;
   padding-top: 78px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.cards__link-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 144px;
+}
+
+.cards__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cards__link-text {
+  max-width: 80px;
+  min-height: 50px;
+  display: inline-block;
 }
 
 .cards__title {
   color: $f-minor;
   font-weight: 400;
+  margin: 0;
+}
+
+.cards__description {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.cards__value {
+  text-align: right;
+  margin: 0;
+}
+
+.cards__button {
+  grid-column: 1 / -1;
+  margin-bottom: 24px;
+}
+
+.cards__button--more {
+  color: $f-main;
+  background: $bg-secondary;
+}
+
+.cards__explanation {
+  margin: 9px 0 21px;
 }
