@@ -1,14 +1,22 @@
 .extra-products {
   margin-bottom: 40px;
+
+  @include tablet {
+    margin-bottom: 79px;
+  }
 }
 
 .extra-products__title {
-  margin-bottom: 34px;
+  margin-bottom: 80px;
 }
 
 .extra-products__list {
   @include list-resseting;
   margin-bottom: 35px;
+
+  @include tablet {
+    margin-bottom: 70px;
+  }
 }
 
 .extra-products__gift {
@@ -27,10 +35,28 @@
     );
   background-repeat: no-repeat;
   background-size: 100%, 280px 290px;
+
+  @include tablet {
+    text-align: start;
+    background:
+      linear-gradient(0deg, rgba(104, 183, 56, 0.85) 20%, rgba(104, 183, 56, 0.85) 80%),
+      image-set(
+        url("../../images/backgrounds/cat-backpack-tablet@1x.jpg") 1x,
+        url("../../images/backgrounds/cat-backpack-tablet@2x.jpg") 2x
+      );
+    background-repeat: no-repeat;
+    background-size: 100%, 707px 200px;
+    min-height: 200px;
+    padding: 70px 0 0;
+  }
 }
 
 .extra-products__gift-description {
   margin: 0;
+
+  @include tablet {
+    margin-left: 423px;
+  }
 }
 
 .extra-products__gift-description::before {
@@ -44,4 +70,9 @@
   position: absolute;
   bottom: 155px;
   left: 38%;
+
+  @include tablet {
+    bottom: 63px;
+    left: 14%;
+  }
 }
