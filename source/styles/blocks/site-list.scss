@@ -68,6 +68,12 @@
   }
 }
 
+.site-list__item--catalog a[href] {
+  @include desktop {
+    color: $f-trifle;
+  }
+}
+
 .site-list a {
   display: block;
   padding-top: 19px;

@@ -56,6 +56,10 @@
 
 .contacts__content--background {
   background: $bg-secondary;
+
+  @include desktop {
+    background-color: #ffffff;
+  }
 }
 
 .contacts__slogan {

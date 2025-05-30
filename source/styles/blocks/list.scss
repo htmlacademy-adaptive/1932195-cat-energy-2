@@ -5,6 +5,11 @@
     border-left: 1px solid $bg-secondary-dull;
     border-right: 1px solid $bg-secondary-dull;
   }
+
+  @include desktop {
+    border-left: none;
+    border-right: none;
+  }
 }
 
 .list__item {
@@ -15,6 +20,14 @@
     display: flex;
     flex-wrap: wrap;
     padding: 28px 38px;
+  }
+
+  @include desktop {
+    display: grid;
+    grid-template-columns: 1fr 285px 244px;
+    align-items: center;
+    grid-gap: 40px;
+    padding: 15px 0;
   }
 }
 
@@ -33,6 +46,11 @@
     width: 50%;
     margin-bottom: 22px;
   }
+
+  @include desktop {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 .list__text {
@@ -49,6 +67,12 @@
     justify-content: end;
     gap: 49px;
   }
+
+  @include desktop {
+    width: 100%;
+    justify-content: space-between;
+    margin: 0;
+  }
 }
 
 .list__link {
@@ -58,5 +82,9 @@
     font-size: 16px;
     line-height: 20px;
     width: 100%;
+  }
+
+  @include desktop {
+    min-width: 244px;
   }
 }

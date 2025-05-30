@@ -1,5 +1,12 @@
 .newsletter-form {
-  display: flex;
+  @include tablet {
+    display: flex;
+  }
+
+  @include desktop {
+    width: 752px;
+    margin-left: 276px;
+  }
 }
 
 .newsletter-form__field {
@@ -8,6 +15,7 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $f-main;
+  border: 1px solid $bg-secondary-dull;
   padding: 11px;
   width: 100%;
   margin-bottom: 16px;

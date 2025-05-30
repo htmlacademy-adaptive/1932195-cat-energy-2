@@ -4,10 +4,30 @@
   @include tablet {
     margin-bottom: 79px;
   }
+
+  @include desktop {
+    margin-bottom: 98px;
+  }
 }
 
 .extra-products__title {
-  margin-bottom: 80px;
+  margin-bottom: 40px;
+
+  @include tablet {
+    margin-bottom: 80px;
+  }
+
+  @include desktop {
+    margin-bottom: 78px;
+  }
+}
+
+.extra-products__wrapper {
+  @include desktop {
+    display: grid;
+    grid-template-columns: 1fr 245px;
+    grid-gap: 80px;
+  }
 }
 
 .extra-products__list {
@@ -16,6 +36,10 @@
 
   @include tablet {
     margin-bottom: 70px;
+  }
+
+  @include desktop {
+    margin: 0;
   }
 }
 
@@ -49,6 +73,20 @@
     min-height: 200px;
     padding: 70px 0 0;
   }
+
+  @include desktop {
+    text-align: start;
+    background:
+      linear-gradient(0deg, rgba(104, 183, 56, 0.85) 20%, rgba(104, 183, 56, 0.85) 80%),
+      image-set(
+        url("../../images/backgrounds/cat-backpack-desktop@1x.jpg") 1x,
+        url("../../images/backgrounds/cat-backpack-desktop@2x.jpg") 2x
+      );
+    background-repeat: no-repeat;
+    background-size: 100%, 245px 288px;
+    min-height: 288px;
+    padding: 186px 0 0;
+  }
 }
 
 .extra-products__gift-description {
@@ -56,6 +94,11 @@
 
   @include tablet {
     margin-left: 423px;
+  }
+
+  @include desktop {
+    margin: 0;
+    text-align: center;
   }
 }
 
@@ -74,5 +117,10 @@
   @include tablet {
     bottom: 63px;
     left: 14%;
+  }
+
+  @include desktop {
+    bottom: 37%;
+    left: 81%;
   }
 }

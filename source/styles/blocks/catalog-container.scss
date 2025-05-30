@@ -8,4 +8,8 @@
     margin-bottom: 84px;
     padding: 0;
   }
+
+  @include desktop {
+    margin-top: 42px;
+  }
 }
