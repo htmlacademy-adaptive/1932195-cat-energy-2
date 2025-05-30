@@ -5,6 +5,7 @@
     max-width: 768px;
     margin: 0 auto;
     padding: 0 30px;
+    margin-bottom: 71px;
   }
 }
 
@@ -14,6 +15,6 @@
   @include tablet {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 140px 60px;
+    gap: 61px 60px;
   }
 }

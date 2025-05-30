@@ -1,10 +1,21 @@
 .list {
   border-top: 1px solid $bg-secondary-dull;
+
+  @include tablet {
+    border-left: 1px solid $bg-secondary-dull;
+    border-right: 1px solid $bg-secondary-dull;
+  }
 }
 
 .list__item {
   border-bottom: 1px solid $bg-secondary-dull;
   padding: 13px 0 19px;
+
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 28px 38px;
+  }
 }
 
 .list__title {
@@ -15,6 +26,13 @@
   font-weight: 400;
   text-transform: uppercase;
   margin: 0 0 12px;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 20px;
+    width: 50%;
+    margin-bottom: 22px;
+  }
 }
 
 .list__text {
@@ -23,8 +41,22 @@
   margin: 0 0 15px;
   display: flex;
   justify-content: space-between;
+
+  @include tablet {
+    font-size: 16px;
+    line-height: 20px;
+    width: 50%;
+    justify-content: end;
+    gap: 49px;
+  }
 }
 
 .list__link {
   display: inline-block;
+
+  @include tablet {
+    font-size: 16px;
+    line-height: 20px;
+    width: 100%;
+  }
 }
