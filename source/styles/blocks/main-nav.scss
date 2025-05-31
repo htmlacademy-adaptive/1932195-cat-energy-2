@@ -1,11 +1,5 @@
 .main-nav {
-  // position: relative;
   width: auto;
-  // min-height: 65px;
-
-  // @include tablet {
-
-  // }
 }
 
 .main-nav__toggle {
@@ -20,11 +14,6 @@
   cursor: pointer;
   border: none;
   padding: 0;
-
-  // &:hover,
-  // &:active {
-  //   background-color: #624530;
-  // }
 }
 
 .main-nav--closed .main-nav__toggle::before {
@@ -63,9 +52,6 @@
 
   .main-nav--opened .main-nav__wrapper {
     position: absolute;
-    // top: 0;
-    // right: 0;
-    // left: 70px;
     z-index: 10;
     min-height: 21vh;
     min-width: 100%;
@@ -92,10 +78,6 @@
 }
 
 .main-nav--opened .main-nav__toggle {
-  // top: 0;
-  // right: auto;
-  // left: 0;
-
   &::before,
   &::after {
     content: "";
@@ -121,33 +103,6 @@
     background-color: rgba(0, 0, 0, 0.3);
   }
 }
-
-// .main-nav__toggle {
-//   position: relative;
-//   z-index: 101;
-//   width: 65px;
-//   height: 65px;
-//   padding: none;
-//   cursor: pointer;
-//   border: none;
-//   background-color: $f-highlighted;
-//   background-image: url("../../icons/stack.svg#menu-close");
-//   background-repeat: no-repeat;
-//   background-size: 24px 24px;
-//   background-position: center;
-
-//   :hover {
-//     opacity: 0.6;
-//   }
-
-//   &:active {
-//     opacity: 0.3;
-//   }
-// }
-
-// .main-nav__toggle--close {
-//   background-image: url("../../icons/stack.svg#menu-burger");
-// }
 
 .main-nav__list {
   @include list-resseting;
@@ -181,18 +136,8 @@
   }
 }
 
-
 @include desktop {
   .main-nav__list {
     width: 475px;
   }
 }
-
-// @include tablet {
-//   .main-nav__wrapper {
-//     display: flex;
-//     justify-content: space-between;
-//     width: 704px;
-//     margin: 0 auto;
-//   }
-// }

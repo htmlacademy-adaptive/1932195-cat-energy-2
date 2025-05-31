@@ -30,7 +30,7 @@
         content: "";
         position: absolute;
         right: 0;
-        bottom: 0;
+        bottom: 2px;
         left: 0;
         height: 2px;
         background: $bg-main;
@@ -38,9 +38,24 @@
         @include desktop {
           background: $f-highlighted;
         }
-/* stylelint-enable */
       }
     }
+
+    &--active-catalog {
+      position: relative;
+      &::after {
+        @include desktop {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 2px;
+        left: 0;
+        height: 2px;
+        background: $bg-main;
+        }
+      }
+    }
+/* stylelint-enable */
   }
 }
 
@@ -85,7 +100,6 @@
     padding: 0;
     padding-top: 39px;
     padding-bottom: 12px;
-    // background: none;
     border: none;
   }
 }

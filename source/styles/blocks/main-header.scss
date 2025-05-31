@@ -1,13 +1,7 @@
 .main-header {
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: space-between;
-
   @include tablet {
     display: flex;
-    // justify-content: start;
-    // flex-direction: row;
-    gap: 94px;
+    gap: 68px;
     padding: 0 30px;
     margin: 0 auto;
     max-width: 768px;
@@ -65,36 +59,3 @@
     opacity: 0.2;
   }
 }
-
-// .main-header__logo img {
-//   width: 33px;
-//   height: 65px;
-
-//   @include tablet {
-//     width: 60px;
-//     height: 50px;
-//   }
-
-//   @include desktop {
-//     width: 70px;
-//     height: 59px;
-//   }
-// }
-
-// .main-header__logo-text {
-//   display: inline-flex;
-// }
-
-// .main-header__logo-text img {
-//   width: 101px;
-//   height: 65px;
-
-//   @include tablet {
-//     height: 18px;
-//   }
-
-//   @include desktop {
-//     width: 118px;
-//     height: 21px;
-//   }
-// }

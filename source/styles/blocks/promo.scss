@@ -8,13 +8,13 @@
     min-height: 870px;
     max-width: 768px;
     margin: 0 auto;
-    padding: 40px 120px;
+    padding: 36px 120px;
   }
 
   @include desktop {
     max-width: 1300px;
     min-height: 631px;
-    padding-top: 59px;
+    padding-top: 55px;
   }
 }
 
@@ -26,7 +26,7 @@
   background-position: center top, center top;
   min-height: 302px;
   margin-bottom: 100px;
-  padding-top: 21px;
+  padding-top: 25px;
 
   @include tablet {
     background: none;
@@ -80,7 +80,7 @@
 
 .promo__image {
   position: absolute;
-  top: -240px;
+  top: -237px;
   left: 50%;
   translate: -50%;
 
@@ -98,7 +98,7 @@
 .promo__link {
   display: inline-flex;
   justify-content: center;
-  margin-top: 33px;
+  margin-top: 37px;
 
   @include tablet {
     padding: 14px;

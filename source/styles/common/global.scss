@@ -12,30 +12,11 @@ body {
   font-size: 14px;
   line-height: 18px;
   color: $f-main;
-  // width: 320px;
   margin: 0;
   position: relative;
-
-  // @include tablet {
-  //   width: 768px;
-  // }
-
-  // @include desktop {
-  //   width: 1440px;
-  // }
 }
 
-// body {
-//   // @include font-setting;
-//   // height: 100%;
-//   margin: 0;
-//   // padding: 0;
-//   // background-color: $f-highlighted;
-// }
-
 img {
-  // max-width: 100%;
-  // height: auto;
   object-fit: contain;
 }
 

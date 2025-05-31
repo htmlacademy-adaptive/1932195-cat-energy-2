@@ -1,12 +1,7 @@
-// .logo {
-//   display: inline-flex;
-//   height: 65px;
-
-//   @include tablet {
-//     height: 50px;
-//   }
-// }
-
 .logo__picture {
   margin-right: 56px;
+
+  @include tablet {
+    margin-right: 13px;
+  }
 }

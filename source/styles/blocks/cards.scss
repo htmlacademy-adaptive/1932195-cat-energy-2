@@ -30,8 +30,6 @@
   background-position: center 14%;
   background-repeat: no-repeat;
   background-size: 30px 30px;
-  // grid-template-areas: "title" "description" "button";
-  // justify-items: center;
   padding-top: 78px;
   display: flex;
   flex-direction: column;
@@ -191,6 +189,16 @@
 .cards__button--more {
   color: $f-main;
   background: $bg-secondary;
+
+  &:not(:disabled):hover,
+  &:not(:disabled):active,
+  &:not(:disabled):focus-visible {
+    background-color: $bg-secondary-dim;
+  }
+
+  &:disabled {
+    background-color: $bg-extra-scarce;
+  }
 
   @include tablet {
     display: block;

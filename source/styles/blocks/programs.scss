@@ -16,7 +16,7 @@
 .programs__item {
   background-color: $bg-secondary;
   padding: 21px 20px 18px;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   background-repeat: no-repeat;
 
   @include tablet {
@@ -33,8 +33,6 @@
 .programs__item--loss {
   background-image: url("../../icons/stack.svg#cat-slim");
   background-size: 50px 53px;
-  // width: 50px;
-  // height: 53px;
   background-position: 20px 21px;
 
   @include tablet {
@@ -51,8 +49,6 @@
 .programs__item--gain {
   background-image: url("../../icons/stack.svg#cat-pro");
   background-size: 67px 50px;
-  // width: 67px;
-  // height: 50px;
   background-position: 11px 25px;
 
   @include tablet {
@@ -104,7 +100,7 @@
 }
 
 .programs__description {
-  margin: 0 0 43px;
+  margin: 0 0 41px;
 
   @include tablet {
     font-size: 16px;
@@ -118,6 +114,7 @@
 }
 
 .programs__link {
+  position: relative;
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 16px;
@@ -127,17 +124,43 @@
   @include tablet {
     font-size: 20px;
     line-height: 20px;
+    min-width: 165px;
+  }
+
+  &:hover {
+    .programs__link-icon::after {
+      left: 3px;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
-.programs__link::after {
-  content: "";
-  background-color: $f-secondary;
-  width: 24px;
+.programs__link-icon {
+  display: inline-flex;
+  position: relative;
+  overflow: hidden;
+  width: 40px;
   height: 12px;
-  transition: all, all 1.3s;
-  mask-image: url("../../icons/stack.svg#arrow");
-  mask-position: 100%;
-  mask-size: 24px 12px;
-  mask-repeat: no-repeat;
+
+  @include tablet {
+    width: 49px;
+    height: 16px;
+  }
+
+  &::after {
+    content: "";
+    background-color: $f-secondary;
+    mask-image: url("../../icons/stack.svg#arrow");
+    mask-position: 100%;
+    mask-size: 24px 12px;
+    mask-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -3px;
+    top: -1px;
+  }
 }

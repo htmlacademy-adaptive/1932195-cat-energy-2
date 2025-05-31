@@ -15,7 +15,6 @@
 
 .example::before {
   @include desktop {
-    // z-index: 1;
     content: "";
     background-color: $bg-secondary;
     width: 100%;
@@ -32,13 +31,8 @@
     max-width: 1440px;
     padding: 0 110px;
     margin: 0 auto;
-    // display: flex;
-    // max-width: 1220px;
-    // justify-content: space-between;
-    // gap: 10px;
   }
 }
-
 
 .example__background {
   @include desktop {
@@ -139,10 +133,13 @@
     margin: 0;
     padding: 0 9px;
     bottom: -7px;
-    // transform: translate(-1%);
     left: 50%;
     transform: translate(-50%);
     white-space: nowrap;
+  }
+
+  @include desktop {
+    background: $bg-secondary;
   }
 }
 
