@@ -37,10 +37,9 @@
 
 .main-header__logo {
   display: inline-flex;
-  margin-left: 10px;
-  margin-right: 42px;
-  padding-left: 10px;
-  padding-right: 10px;
+  width: 210px;
+  padding: 13px 0 10px 20px;
+  align-items: center;
 
 
   @include tablet {
@@ -52,37 +51,50 @@
   @include desktop {
     height: 59px;
   }
-}
 
-.main-header__logo img {
-  width: 33px;
-  height: 65px;
-
-  @include tablet {
-    width: 60px;
-    height: 50px;
+  &:not(:disabled):hover,
+  &:not(:disabled):focus-visible {
+    opacity: 0.8;
   }
 
-  @include desktop {
-    width: 70px;
-    height: 59px;
+  &:not(:disabled):active {
+    opacity: 0.6;
+  }
+
+  &:disabled {
+    opacity: 0.2;
   }
 }
 
-.main-header__logo-text {
-  display: inline-flex;
-}
+// .main-header__logo img {
+//   width: 33px;
+//   height: 65px;
 
-.main-header__logo-text img {
-  width: 101px;
-  height: 65px;
+//   @include tablet {
+//     width: 60px;
+//     height: 50px;
+//   }
 
-  @include tablet {
-    height: 18px;
-  }
+//   @include desktop {
+//     width: 70px;
+//     height: 59px;
+//   }
+// }
 
-  @include desktop {
-    width: 118px;
-    height: 21px;
-  }
-}
+// .main-header__logo-text {
+//   display: inline-flex;
+// }
+
+// .main-header__logo-text img {
+//   width: 101px;
+//   height: 65px;
+
+//   @include tablet {
+//     height: 18px;
+//   }
+
+//   @include desktop {
+//     width: 118px;
+//     height: 21px;
+//   }
+// }

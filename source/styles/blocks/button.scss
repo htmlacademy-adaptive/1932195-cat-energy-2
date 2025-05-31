@@ -5,4 +5,18 @@
   padding: 10px;
   min-width: 280px;
   text-align: center;
+
+  &:not(:disabled):hover,
+  &:not(:disabled):active,
+  &:not(:disabled):focus-visible {
+    background-color: $bg-main-dim;
+  }
+
+  &:not(:disabled):active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: $bg-extra-scarce;
+  }
 }

@@ -1,5 +1,6 @@
 .contacts {
   background: $f-highlighted;
+  margin-bottom: 14px;
 
   @media #{$desktop-only} {
     position: relative;
@@ -27,7 +28,7 @@
 .contacts__content {
   display: flex;
   justify-content: space-between;
-  background-color: $basic-white;
+  background-color: $f-highlighted;
   padding-top: 26px;
   padding-bottom: 26px;
 
@@ -46,10 +47,10 @@
   }
 
   &--grey {
-    background-color: $basic-grey;
+    background-color: $bg-secondary;
 
     @media #{$desktop-only} {
-      background-color: $basic-white;
+      background-color: $f-highlighted;
     }
   }
 }
@@ -124,7 +125,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-color: $basic-grey-darkness;
+  background-color: $bg-secondary-dim;
 
   @media #{$not-mobile} {
     max-height: 400px;

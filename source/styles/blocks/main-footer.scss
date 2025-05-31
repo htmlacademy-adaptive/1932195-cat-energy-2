@@ -7,6 +7,7 @@
   padding-bottom: 40px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   @include tablet {
     flex-direction: row;
@@ -19,4 +20,6 @@
 .main-footer__logo {
   justify-content: center;
   align-items: center;
+  padding-bottom: 15px;
+  padding-top: 7px;
 }
