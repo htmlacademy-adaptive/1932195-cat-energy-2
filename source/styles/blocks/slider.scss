@@ -20,10 +20,10 @@
   }
 
   @include desktop {
-    top: -457px;
     padding: 0;
     background-color: transparent;
-    right: 110px;
+    top: 87px;
+    right: 543px;
 
     &::before {
       display: none;
