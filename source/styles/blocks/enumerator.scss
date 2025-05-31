@@ -1,0 +1,18 @@
+.enumerator {
+  position: relative;
+  counter-increment: enumerator 1;
+}
+
+.enumerator::after {
+  @include tablet {
+    color: $bg-secondary;
+    content: counter(enumerator);
+    z-index: -1;
+    font-family: $secondary-font;
+    font-size: 280px;
+    line-height: 280px;
+    position: absolute;
+    top: -25px;
+    right: 11px;
+  }
+}

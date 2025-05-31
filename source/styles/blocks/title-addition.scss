@@ -1,0 +1,43 @@
+.title-addition {
+  position: relative;
+  width: fit-content;
+  background: $f-highlighted;
+  box-shadow: -40px 0 0 0 $f-highlighted, 40px 0 0 0 $f-highlighted;
+  font-family: $secondary-font;
+  font-size: 24px;
+  line-height: 24px;
+  color: $f-secondary;
+  font-weight: 400;
+
+  @include tablet {
+    font-size: 32px;
+    line-height: 32px;
+    margin-left: 40px;
+  }
+
+  @include desktop {
+    font-size: 40px;
+    line-height: 40px;
+    margin-left: 0;
+  }
+}
+
+.title-addition::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 100vw;
+  height: 2px;
+  background: $bg-main;
+  box-shadow: 100vw 0 0 0 $bg-main;
+  z-index: -1;
+
+  @include tablet {
+    top: 14px;
+  }
+
+  @include desktop {
+    top: 17px;
+  }
+}

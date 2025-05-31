@@ -1,0 +1,13 @@
+.copyright__link {
+  font-size: 16px;
+  line-height: 20px;
+  color: $f-main;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 19px;
+
+  @include tablet {
+    padding-top: 0;
+  }
+}

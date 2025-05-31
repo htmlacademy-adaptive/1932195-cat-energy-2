@@ -1,1 +1,41 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: $primary-font;
+  font-size: 14px;
+  line-height: 18px;
+  color: $f-main;
+  margin: 0;
+  position: relative;
+}
+
+img {
+  object-fit: contain;
+}
+
+a {
+  text-decoration: none;
+}
+
+.line-break-span {
+  display: block;
+}
+
+.border-line {
+  @include tablet {
+    border-bottom: 1px solid $bg-extra-dim;
+    box-shadow: 100vw 0 0 0 $bg-extra-dim;
+    margin-bottom: 22px;
+  }
+
+  @include desktop {
+    border: none;
+  }
+}

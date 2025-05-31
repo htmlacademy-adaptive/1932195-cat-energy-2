@@ -1,0 +1,224 @@
+.cards__item {
+  border-top: 1px solid $bg-secondary-dim;
+
+  @include tablet {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 12px;
+    padding-bottom: 16px;
+    background: linear-gradient($f-highlighted 16%, $bg-secondary 16%);
+  }
+}
+
+.cards__item--more {
+  border-bottom: 1px solid $bg-secondary-dim;
+
+  @include tablet {
+    display: block;
+    border: none;
+    background: none;
+    box-shadow: inset 0 82px $f-highlighted, inset 0 84px $bg-secondary, inset 0 0 0 2px $bg-secondary;
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+}
+
+.cards__item-more {
+  background-image: url("../../icons/stack.svg#plus");
+  background-position: center 14%;
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  padding-top: 78px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include tablet {
+    display: flow;
+    background-size: 60px 60px;
+    background-position: center 23%;
+    margin-top: 34px;
+    padding-top: 192px;
+  }
+
+  @include desktop {
+    padding: 185px 30px 0;
+  }
+}
+
+.cards__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 324px;
+    margin: 0;
+    padding: 0;
+  }
+
+  @include desktop {
+    width: 245px;
+  }
+}
+
+.cards__link-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 144px;
+
+  @include tablet {
+    height: 206px;
+    margin-bottom: 26px;
+  }
+
+  @include desktop {
+    height: 196px;
+    margin-bottom: 25px;
+  }
+}
+
+.cards__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @include tablet {
+    align-items: center;
+    margin-bottom: 34px;
+  }
+}
+
+.cards__link-text {
+  max-width: 80px;
+  min-height: 50px;
+  display: inline-block;
+
+  @include tablet {
+    max-width: 135px;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  @include desktop {
+    margin-bottom: 20px;
+  }
+}
+
+.cards__title {
+  color: $f-minor;
+  font-weight: 400;
+  margin: 0;
+
+  @include tablet {
+    line-height: 24px;
+  }
+}
+
+.cards__title--more {
+  @include tablet {
+    margin: 0 43px;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  @include desktop {
+    margin: 0 0 24px;
+  }
+}
+
+.cards__description {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @include tablet {
+    width: 250px;
+    row-gap: 9px;
+  }
+
+  @include desktop {
+    width: 169px;
+    row-gap: 4px;
+  }
+}
+
+.cards__option {
+  @include tablet {
+    border-bottom: 1px solid $bg-secondary-dull;
+    padding-bottom: 2px;
+  }
+
+  @include desktop {
+    padding-bottom: 8px;
+  }
+}
+
+.cards__value {
+  text-align: right;
+  margin: 0;
+
+  @include tablet {
+    border-bottom: 1px solid $bg-secondary-dull;
+    padding-bottom: 2px;
+  }
+}
+
+.cards__button {
+  grid-column: 1 / -1;
+  margin-bottom: 24px;
+
+  @include tablet {
+    font-size: 16px;
+    line-height: 20px;
+    min-width: 250px;
+  }
+
+  @include desktop {
+    min-width: 169px;
+  }
+}
+
+.cards__button--more {
+  color: $f-main;
+  background: $bg-secondary;
+
+  &:not(:disabled):hover,
+  &:not(:disabled):active,
+  &:not(:disabled):focus-visible {
+    background-color: $bg-secondary-dim;
+  }
+
+  &:disabled {
+    background-color: $bg-extra-scarce;
+  }
+
+  @include tablet {
+    display: block;
+  }
+}
+
+.cards__explanation {
+  margin: 9px 0 21px;
+
+  @include tablet {
+    line-height: 18px;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 83px;
+  }
+
+  @include desktop {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 91px;
+  }
+}

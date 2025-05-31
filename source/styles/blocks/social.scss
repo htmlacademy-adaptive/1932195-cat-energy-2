@@ -1,0 +1,64 @@
+.social {
+  width: 100%;
+
+  @include tablet {
+    padding-left: 26px;
+  }
+}
+
+.social__list {
+  @include list-resseting;
+
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  border-top: 1px solid $bg-extra;
+  border-bottom: 1px solid $bg-extra;
+  padding-top: 21px;
+  padding-bottom: 18px;
+
+  @include tablet {
+    border: none;
+    padding-top: 14px;
+    padding-left: 8px;
+  }
+}
+
+.social__link {
+  background-position: 50%;
+  background-color: $f-average;
+  min-width: 28px;
+  min-height: 22px;
+  display: block;
+
+  &:not(:disabled):hover,
+  &:not(:disabled):focus {
+    background-color: $bg-main;
+  }
+
+  &:not(:disabled):active {
+    background-color: rgba(104, 183, 56, 0.3);
+  }
+
+  &:disabled {
+    opacity: 0.2;
+  }
+}
+
+.social__link--vkontakte {
+  mask-image: url("../../icons/stack.svg#vkontakte");
+  mask-size: 28px 22px;
+  mask-repeat: no-repeat;
+}
+
+.social__link--youtube {
+  mask-image: url("../../icons/stack.svg#youtube");
+  mask-size: 28px 22px;
+  mask-repeat: no-repeat;
+}
+
+.social__link--telegram {
+  mask-image: url("../../icons/stack.svg#telegram");
+  mask-size: 28px 22px;
+  mask-repeat: no-repeat;
+}

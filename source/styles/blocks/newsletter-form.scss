@@ -1,0 +1,38 @@
+.newsletter-form {
+  @include tablet {
+    display: flex;
+  }
+
+  @include desktop {
+    width: 752px;
+    margin-left: 276px;
+  }
+}
+
+.newsletter-form__field {
+  font-family: $secondary-font;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $f-main;
+  border: 1px solid $bg-secondary-dull;
+  padding: 11px;
+  width: 100%;
+  margin-bottom: 16px;
+
+  @include tablet {
+    margin: 0;
+  }
+}
+
+.newsletter-form__button {
+  font-family: $secondary-font;
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: uppercase;
+  padding: 15px;
+
+  @include tablet {
+    min-width: 256px;
+  }
+}

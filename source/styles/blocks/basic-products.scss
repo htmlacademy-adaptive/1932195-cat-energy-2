@@ -1,0 +1,32 @@
+.basic-products {
+  margin-bottom: 25px;
+
+  @include tablet {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 30px;
+    margin-bottom: 71px;
+  }
+
+  @include desktop {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 110px;
+    margin-bottom: 70px;
+  }
+}
+
+.basic-products__list {
+  @include list-resseting;
+
+  @include tablet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 61px 60px;
+  }
+
+  @include desktop {
+    grid-template-columns: repeat(4, 245px);
+    gap: 63px 80px;
+  }
+}

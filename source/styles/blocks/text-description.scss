@@ -1,0 +1,9 @@
+.text-description {
+  font-size: 12px;
+  line-height: 16px;
+
+  @include tablet {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
