@@ -1,4 +1,5 @@
 .main-footer {
+  width: 100vw;
   background: $bg-secondary;
 }
 
@@ -49,6 +50,10 @@
 
 .main-footer__copyright {
   width: 100%;
+
+  @include tablet {
+    padding-bottom: 6px;
+  }
 
   &:not(:disabled):active,
   &:not(:disabled):focus-visible {

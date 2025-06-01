@@ -44,7 +44,7 @@
     &--active-catalog {
       position: relative;
       &::after {
-        @include desktop {
+        @include tablet {
         content: "";
         position: absolute;
         right: 0;
