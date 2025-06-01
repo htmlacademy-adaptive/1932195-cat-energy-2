@@ -1,5 +1,5 @@
 .main-nav {
-  width: auto;
+  width: 100%;
 }
 
 .main-nav__toggle {
@@ -54,7 +54,7 @@
     position: absolute;
     z-index: 10;
     min-height: 21vh;
-    min-width: 100%;
+    min-width: 100vw;
     background-color: $f-highlighted;
   }
 

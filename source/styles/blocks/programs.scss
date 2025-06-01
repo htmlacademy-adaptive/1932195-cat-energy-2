@@ -9,6 +9,7 @@
 
   @include desktop {
     display: flex;
+    flex-wrap: wrap;
     gap: 80px;
   }
 }
@@ -100,16 +101,19 @@
 }
 
 .programs__description {
-  margin: 0 0 41px;
+  border-bottom: 1px solid $bg-extra-sparse;
+  margin: 0 0 19px;
+  padding-bottom: 21px;
 
   @include tablet {
+    border: none;
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 57px;
+    margin-bottom: 37px;
   }
 
   @include desktop {
-    margin-bottom: 31px;
+    margin-bottom: 11px;
   }
 }
 
@@ -129,7 +133,7 @@
 
   &:hover {
     .programs__link-icon::after {
-      left: 3px;
+      left: 0;
     }
   }
 

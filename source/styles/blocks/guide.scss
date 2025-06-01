@@ -22,7 +22,8 @@
 
   @include desktop {
     display: flex;
-    gap: 70px;
+    flex-wrap: wrap;
+    gap: 73px;
   }
 }
 
@@ -34,6 +35,10 @@
     margin: 0;
     flex-direction: column;
     padding: 14px 0 57px;
+  }
+
+  @include desktop {
+    max-width: 250px;
   }
 }
 
@@ -55,19 +60,35 @@
 }
 
 .guide__item--nutrients::before {
-  background-image: url("../../icons/stack.svg#nutrients");
+  background-image: url("../../icons/stack.svg#nutrients-mobile");
+
+  @include tablet {
+    background-image: url("../../icons/stack.svg#nutrients");
+  }
 }
 
 .guide__item--powder::before {
-  background-image: url("../../icons/stack.svg#powder");
+  background-image: url("../../icons/stack.svg#powder-mobile");
+
+  @include tablet {
+    background-image: url("../../icons/stack.svg#powder");
+  }
 }
 
 .guide__item--replacement::before {
-  background-image: url("../../icons/stack.svg#replacement");
+  background-image: url("../../icons/stack.svg#replacement-mobile");
+
+  @include tablet {
+    background-image: url("../../icons/stack.svg#replacement");
+  }
 }
 
 .guide__item--change::before {
-  background-image: url("../../icons/stack.svg#change");
+  background-image: url("../../icons/stack.svg#change-mobile");
+
+  @include tablet {
+    background-image: url("../../icons/stack.svg#change");
+  }
 }
 
 .guide__description {
