@@ -84,6 +84,14 @@
     height: 196px;
     margin-bottom: 25px;
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .cards__image {
@@ -116,6 +124,14 @@
 
   @include desktop {
     margin-bottom: 20px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
